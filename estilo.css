@@ -5,50 +5,54 @@ body{
 }
 .cuerpo{
     display: flex;
-    flex-direction: column;
-    margin: 5px;
-    
+    flex-direction: column;    
 }  
-article div{
-    background-color: rgb(35, 35, 35);
-    border-radius: 15px;
+.container{
     display: flex;
-    
-    justify-content: space-evenly;
-    padding: 20px;
-    margin: 35px auto;
-    width: 1300px;
-    margin-bottom: 25px;
+    margin: 2rem 0;
+    justify-content: center;
     text-align: center;
+    gap: 5rem;
 }
 .cal{
+    display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(35, 35, 35);
+    width: 30%;
+    padding: 2.6rem 0.6rem;
+    border-radius: 1.2rem;
+    gap: 1.5rem;
+
 }
-input[type="text"]{
+.cal h2, .cal h3{
+    margin: 0;
+} 
+input{
     color: #fff;
-    height: 27px;
-    width: 500px;
-    margin: auto;
+    height: 2.6rem;
+    width: 90%;
     border-radius: 10px;
     background-color:rgb(35, 35, 35);
     border: none;
     border-bottom: solid 2px rgb(159, 159, 159);
     text-align: center;
+    font-size: 1rem;
     
 }
-input[type="text"]::placeholder{
+input::placeholder{
     text-align: center;
+    font-size: 0.95rem;
 }
-input[type="text"]:hover{
+input:hover{
     border-color: #fff;
     cursor: text;
 }
-input[type="text"]:hover::placeholder{
+input:hover::placeholder{
     color: #fff;
 }
-input[type="text"]:focus{
+input:focus{
     color: #fff;
     outline: none;
     border: none;
@@ -92,23 +96,20 @@ h4{
         display: flex;
     }
 }
-.bobones{
+.botones{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     margin-top: 20px;
+    gap:28%;
 }
 button{
-    
-    
-    
-    width: 120px;
-    height: 55px;
+    width: 7.5rem;
+    height: 3.6rem;
     font-size: large;
     color: #fff;
     background-color: rgba(62, 61, 61, 0.5);
     border: 3px outset #000;
-    
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 .añadir{
     color: rgb(10, 132, 239);
@@ -116,4 +117,5 @@ button{
 
 button:hover{
     box-shadow: 1px 3px 15px 1px;
+    cursor: pointer;
 }

@@ -6,9 +6,10 @@ const nuevaNota = ()=>{
     a++;
     let agregar = document.querySelector(".cuerpo");
     let item = document.createElement("DIV");
+    item.classList = "container"
     item.innerHTML =
      `<div class="cal">
-    <h1>Escribe tu calificacion:</h1>
+    <h2>Escribe tu calificacion:</h2>
     <input type="text" placeholder="escriba aqui" class="nota-${a}">
 </div>
 <div class="cal">
